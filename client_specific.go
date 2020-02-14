@@ -3,12 +3,12 @@ package main
 import (
 	"encoding/json"
 	"errors"
-	"github.com/kzub/trickyproxy/endpoint"
 	"go.uber.org/zap"
 	"net/http"
 	"net/url"
 	"regexp"
 	"strings"
+	"trickyproxy/endpoint"
 )
 
 var riakSecondaryIndexSearch *regexp.Regexp

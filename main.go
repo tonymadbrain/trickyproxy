@@ -4,7 +4,6 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/kzub/trickyproxy/endpoint"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"io/ioutil"
@@ -13,12 +12,13 @@ import (
 	"os"
 	"regexp"
 	"strings"
+	"trickyproxy/endpoint"
 )
 
 type resultStatus int
 
 const (
-	version   string       = "2.3.0"
+	version   string       = "2.3.1"
 	servOk    resultStatus = iota
 	servFail  resultStatus = iota
 	servRetry resultStatus = iota
